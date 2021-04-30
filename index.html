@@ -17,8 +17,8 @@
 		<meta property="og:locale" content="ja_JP" />
 
 		<!-- Font Awesome if you need it
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		-->
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
@@ -29,30 +29,144 @@
 		class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
 		style="background-image: url('https://source.unsplash.com/1L71sPT5XKc')"
 	>
+		<!--
+		body { 
+			fontfamily/
+			-webkit/
+			color/
+			line-height:1.5/
+			letter-spacing/
+			background-size/ 
+			background-image 
+		}
+		-->
 		<div
 			class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
 		>
+			<!-- 
+			div {
+				max-width:56rem;
+				display:flex;
+				align-item:center;
+				height:auto;
+				flex-wrap:wrap;
+				margin-(x):auto;
+				margin(y):8rem; 
+				@screen { 
+					margin(y):0 
+				}
+			}
+			-->
+
 			<!--Main Col-->
 			<div
 				id="profile"
 				class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
 			>
+				<!-- 
+				div {
+					width:100%;
+					@screen{
+						width:60%;
+					}
+					border-radius:0.5rem;
+					@screen{
+						border-top-left-radius,
+						border-bottom-left-radius:0.5rem
+					}
+					@screen{
+						border-top-right-radius,
+						border-bottom-right-radius:0.5rem
+					}
+					box-shadow:0 25px 50px -12px rgba(0, 0, 0, 0.25);
+					background-color:#fff;
+					opacity: .75;
+					margin(x):1.5rem;
+					@screen{
+						margin(x):0;
+					}
+				}
+			 	-->
+
 				<div class="p-4 md:p-12 text-center lg:text-left">
-					<!-- Image for mobile view-->
+					<!--
+					div{
+						padding:1rem;
+						@tablet{
+							padding:3rem;
+						}
+						text-align:center;
+						@screen{
+							text-align:left;
+						}
+					}
+					-->
+
+					<!-- sp profile-img -->
 					<div
 						class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
 						style="
 							background-image: url('https://source.unsplash.com/MP0IUfwrn0A');
 						"
 					></div>
+					<!--
+						div{
+							display:block;
+							@screen{
+								display:none;
+							}
+							border-radius:9999px;
+							box-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+							margin(x):auto;
+							margin-top:-4rem;
+							height:12rem;
+							width:12rem;
+							background-size:cover;
+							background-position:center;
+						}
+					-->
 
 					<h1 class="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1>
+					<!--
+						h1{
+							font-size: 1.875rem; line-height: 2.25rem;
+							font-weight:bold;
+							padding-top:2rem;
+							@screen{
+								padding-top:0rem;
+							}
+						}
+					-->
 					<div
 						class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"
 					></div>
+					<!--
+						div{
+							margin(x):auto;
+							@screen{
+								margin(x):0;
+							}
+							width:80%;
+							border-bottom-width:2px;
+							border-color:green-500;
+							opacity:.25;
+						}
+					-->
 					<p
 						class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
 					>
+						<!--
+						p{
+							padding-top:1rem;
+							font-size: 1rem; line-height: 1.5rem;
+							font-weight:bold;
+							display:flex;
+							justify-content: center;
+							@screen{
+								justify-content: flex-start;
+							}
+						}
+						-->
 						<svg
 							class="h-4 fill-current text-green-700 pr-4"
 							xmlns="http://www.w3.org/2000/svg"
