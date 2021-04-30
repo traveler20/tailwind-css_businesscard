@@ -4,21 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>businesscard|traveler20.site</title>
+		<title>profile-card|tailwindcss</title>
 		<meta name="description" content="" />
 		<meta property="og:url" content="サイトのURL" />
-		<meta property="og:title" content="businesscard|traveler20.site" />
+		<meta property="og:title" content="profile-card|tailwindcss" />
 		<meta property="og:type" content="website" />
 		<meta property="og:description" content="" />
 		<meta property="og:image" content="img/fv.jpg" />
 		<meta name="twitter:card" content="large" />
 		<meta name="twitter:site" content="@ユーザー名" />
-		<meta property="og:site_name" content="businesscard|traveler20.site" />
+		<meta property="og:site_name" content="profile-card|tailwindcss" />
 		<meta property="og:locale" content="ja_JP" />
 
-		<!-- Font Awesome if you need it
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-		-->
+		<!-- Font Awesome if you need it -->
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"> -->
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
@@ -172,6 +171,14 @@
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
 						>
+							<!-- 
+							svg {
+								height: 1rem;
+								fill: currentColor;
+								--tw-text-opacity: 1;color: rgba(4, 120, 87, var(--tw-text-opacity));
+								padding-right: 1rem;
+							} 
+							-->
 							<path
 								d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"
 							/>
@@ -181,11 +188,35 @@
 					<p
 						class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
 					>
+						<!--
+						p {
+							padding-top: 0.5rem;
+							--tw-text-opacity: 1; color: rgba(75, 85, 99, var(--tw-text-opacity));
+							font-size: 0.75rem; line-height: 1rem;
+							@media (min-width: 1024px) {
+								font-size: 0.875rem; line-height: 1.25rem;
+							}
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							@media (min-width: 1024px) {
+								justify-content: flex-start;
+							}
+						}
+						-->
 						<svg
 							class="h-4 fill-current text-green-700 pr-4"
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
 						>
+							<!-- 
+							svg {
+								height: 1rem;
+								fill: currentColor;
+								--tw-text-opacity: 1;color: rgba(4, 120, 87, var(--tw-text-opacity));
+								padding-right: 1rem;
+							} 
+							-->
 							<path
 								d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"
 							/>
@@ -196,12 +227,37 @@
 						Totally optional short description about yourself, what you do and
 						so on.
 					</p>
+					<!--
+					p{
+						padding-top:2rem;
+						font-size: .875rem; line-height: 1.25rem;
+					}
+					-->
 
 					<div class="pt-12 pb-8">
+						<!--
+						div{
+							padding-top:3rem;
+							padding-bottom:2rem;
+						}
+						-->
 						<a
 							href="https://traveler20.site/portfolio"
 							class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
 						>
+							<!--
+							a{
+								--tw-bg-opacity: 1; background-color: rgba(4,120,87,var(--tw-bg-opacity));
+								--tw-text-opacity: 1; color: rgba(255,255,255,var(--tw-text-opacity));
+								font-weight: 700;
+								padding-y:0.5rem;
+								padding-x:1rem;
+								border-radius: 9999px;
+							}
+							a:hover{
+								--tw-bg-opacity: 1; background-color: rgba(6,78,59,var(--tw-bg-opacity));
+							}
+							-->
 							Portfolio site
 						</a>
 					</div>
@@ -209,6 +265,24 @@
 					<div
 						class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
 					>
+						<!--
+						div{
+							margin-top:1.5rem;
+							padding-bottom:4rem;
+							@media(min-width: 1024px){
+								padding-bottom:0;
+							}
+							width:80%;
+							@media(min-width: 1024px){
+								width:100%
+							}
+							margin-x:auto;
+							display:flex;
+							flex-wrap:wrap;
+							align-items: center;
+							justify-content: space-between;
+						}
+						-->
 						<a class="link" href="#" data-tippy-content="@facebook_handle">
 							<svg
 								class="h-6 fill-current text-gray-600 hover:text-green-700"
@@ -216,6 +290,16 @@
 								viewBox="0 0 24 24"
 								xmlns="http://www.w3.org/2000/svg"
 							>
+								<!--
+								svg{
+									height:1.5rem;
+									fill: currentColor;
+									--tw-text-opacity: 1; color: rgba(75,85,99,var(--tw-text-opacity));
+								}
+								svg:hover{
+									--tw-text-opacity: 1; color: rgba(4,120,87,var(--tw-text-opacity));
+								}
+								-->
 								<title>Facebook</title>
 								<path
 									d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"
@@ -248,19 +332,6 @@
 								/>
 							</svg>
 						</a>
-						<!-- <a class="link" href="#" data-tippy-content="@dribble_handle">
-							<svg
-								class="h-6 fill-current text-gray-600 hover:text-green-700"
-								role="img"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<title>Dribbble</title>
-								<path
-									d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"
-								/>
-							</svg>
-						</a> -->
 						<a class="link" href="#" data-tippy-content="@instagram_handle">
 							<svg
 								class="h-6 fill-current text-gray-600 hover:text-green-700"
@@ -274,35 +345,59 @@
 								/>
 							</svg>
 						</a>
-						<!-- <a class="link" href="#" data-tippy-content="@youtube_handle">
-							<svg
-								class="h-6 fill-current text-gray-600 hover:text-green-700"
-								role="img"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-							>
-								<title>YouTube</title>
-								<path
-									d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
-								/>
-							</svg>
-						</a> -->
 					</div>
 				</div>
 			</div>
 
 			<!--Img Col-->
 			<div class="w-full lg:w-2/5">
+				<!--
+				div{
+					width:100%;
+					@media (min-width: 1024px) {
+						width: 40%;
+					}
+				}
+				-->
 				<!-- Big profile image for side bar (desktop) -->
 				<img
 					src="https://source.unsplash.com/MP0IUfwrn0A"
 					class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
 				/>
+				<!--
+				img{
+					border-radius: 0;
+					@media (min-width: 1024px) {
+						border-radius: .5rem;
+					}
+					--tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+					display: none;
+					@media (min-width: 1024px) {
+						display:block;
+					}
+				}
+				-->
 			</div>
 
 			<!-- Pin to top right corner -->
 			<div class="absolute top-0 right-0 h-12 w-18 p-4">
+				<!--
+				div{
+					position:absolute;
+					top:0;
+					right:0;
+					height:3rem;
+					width:4.5rem;
+					padding:1rem;
+				}
+				-->
 				<button class="js-change-theme focus:outline-none">🌙</button>
+				<!--
+				button\:outline-none:focus {
+					outline: 2px solid transparent;
+					outline-offset: 2px;
+				}
+				-->
 			</div>
 		</div>
 
