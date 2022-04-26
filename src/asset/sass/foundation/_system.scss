@@ -1,0 +1,68 @@
+/* system
+--------------------------- */
+
+// color system
+// ---------------------
+$c-body-light: #333;
+$c-base-light: #fff;
+$c-body-dark: #fff;
+$c-base-dark: #333;
+
+$c-black: #202225;
+$c-gray: #999;
+$c-border: 0.5px solid
+    rgba(
+        $color: #999,
+        $alpha: 0.5,
+    );
+
+$c-accent: #6fc173;
+
+// transition
+// ---------------------
+@mixin transition-base($second: 0.4s) {
+    transition: all $second;
+}
+
+// content max-width
+// ---------------------
+@mixin content-maxwidth($px: 1200px) {
+    max-width: $px;
+}
+
+// font system
+// ---------------------
+// @mixin garamond($weight: bold) {
+//     font-family: "Cormorant Garamond", serif;
+//     font-weight: $weight;
+// }
+
+// Google Font Awesome
+// ---------------------
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+// responsive system
+// ---------------------
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media (min-width: 640px) {
+            @content;
+        }
+    }
+    @if $point == pc {
+        @media (min-width: 890px) {
+            @content;
+        }
+    }
+}
+
+.pc-only {
+    display: none;
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(pc) {
+    .pc-only {
+        display: inline-block;
+    }
+}

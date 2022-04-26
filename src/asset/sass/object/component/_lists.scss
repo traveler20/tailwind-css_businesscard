@@ -1,0 +1,82 @@
+/* lists
+────────────────────────────── */
+@use "./../../foundation/system" as *;
+
+/* check
+─────────────── */
+.c-lists-check {
+    &__list {
+        position: relative;
+        padding-left: 24px;
+        &:before {
+            content: "※";
+            position: absolute;
+            left: 0;
+            content: "\e876";
+            font-family: "Material Icons";
+            font-weight: 900;
+        }
+        & + li {
+            margin-top: 8px;
+        }
+    }
+}
+
+/* timeline
+─────────────── */
+.c-lists-timeline {
+    margin-left: 14px;
+    position: relative;
+
+    &__list {
+        display: block;
+        position: relative;
+        padding-left: 24px;
+        padding-bottom: 32px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: -2px;
+            top: 10px;
+            bottom: 0;
+            width: 2px;
+            background: $c-gray;
+        }
+        &:last-of-type:before {
+            display: none;
+        }
+    }
+
+    &__dot {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        top: 4px;
+        left: -9px;
+        background-color: $c-gray;
+        // darkmode
+        border: 4px solid $c-base-dark;
+        transition-duration: 0.5s;
+        transition-property: border-color;
+    }
+    // &__time {
+    // 	// font-size: 18px;
+    // }
+    &__content {
+        h3 {
+            // font-size: 18px;
+            font-weight: bold;
+            margin: 8px 0 8px;
+        }
+    }
+}
+
+/* ライトモード */
+body.is_light .c-lists-timeline__dot {
+    border-color: $c-base-light;
+}

@@ -1,0 +1,12 @@
+/* footer
+────────────────────────────── */
+@use "./../foundation/system" as *;
+
+.l-footer {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 20px 20px;
+    color: $c-body-dark;
+    background-color: $c-black;
+    border-top: $c-border;
+}

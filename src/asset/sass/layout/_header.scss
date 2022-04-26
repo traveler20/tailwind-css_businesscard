@@ -1,0 +1,63 @@
+/* header
+────────────────────────────── */
+@use "./../foundation/system" as *;
+
+.l-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    backdrop-filter: blur(12px);
+    border-bottom: $c-border;
+
+    &__inner {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        overflow-x: hidden;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 24px;
+    }
+
+    /* モード切り替えボタン */
+    &__mode {
+        display: inline-block;
+        font-size: 32px;
+        width: 36px;
+        height: 48px;
+        position: relative;
+        &__label {
+            cursor: pointer;
+        }
+        &__input {
+            display: none;
+        }
+        &__mode {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 90px;
+            height: 106px;
+            transform: rotate(0);
+            transition: transform 1s;
+            &::before {
+                content: "🌙";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            &::after {
+                content: "🌼";
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: scale(1, -1);
+            }
+        }
+    }
+}

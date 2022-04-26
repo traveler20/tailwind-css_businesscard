@@ -1,0 +1,24 @@
+/* block
+────────────────────────────── */
+@use "./../../foundation/system" as *;
+
+/* flex
+─────────────── */
+.c-block-flex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/* picture
+─────────────── */
+.c-block-picture {
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    &__image {
+        border-radius: 20px;
+        background-color: $c-accent;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "data": {
+        "meta": {
+            "home": {
+                "title": "traveler20.site",
+                "description": "traveler20のWEBサイトです。"
+            },
+            "about": {
+                "title": "ABOUTページタイトル",
+                "description": "About Description",
+                "url": "about"
+            }
+        }
+    }
+}
