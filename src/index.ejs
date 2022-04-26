@@ -17,7 +17,8 @@
                             <img
                                 class="c-block-picture__image"
                                 src="https://avatars.githubusercontent.com/u/60683849?v=4"
-                                alt=""
+                                alt="traveler20"
+                                loading="lazy"
                             />
                         </picture>
                         <figcaption>
@@ -31,59 +32,54 @@
                             >
                         </figcaption>
                     </figure>
-                    <h2 class="c-text-heading2 mb-5">Timeline</h2>
-                    <ul class="c-lists-timeline">
-                        <li class="c-lists-timeline__list">
-                            <div class="c-lists-timeline__dot"></div>
-                            <time class="c-lists-timeline__time"
-                                >2021.11&nbsp;-</time
-                            >
-                            <div class="c-lists-timeline__content">
-                                <h3>
-                                    東証プライム上場企業のインハウスデザイナーとして就業開始
-                                </h3>
-                                <p>
-                                    正社員のWEBデザイナーとして就業。東証プライム上場企業のSaaS関係のランディングページのデザイン・コーディング制作を担当しています。
-                                </p>
-                            </div>
-                        </li>
-                        <li class="c-lists-timeline__list">
-                            <div class="c-lists-timeline__dot"></div>
-                            <time class="c-lists-timeline__time"
-                                >2021.05&nbsp;-</time
-                            >
-                            <div class="c-lists-timeline__content">
-                                <h3>
-                                    【副業】派遣就業と並行してデザイン・コーディング業務に従事
-                                </h3>
-                                <p>
-                                    派遣社員での就業と並行して、個人事業主としてもデザイン・コーディング業務に従事しています。スタートアップ企業や個人経営店舗のランディングページやホームページ制作を担当。
-                                </p>
-                            </div>
-                        </li>
-                        <li class="c-lists-timeline__list">
-                            <div class="c-lists-timeline__dot"></div>
-                            <time class="c-lists-timeline__time"
-                                >2020.11&nbsp;-&nbsp;2021.10</time
-                            >
-                            <div class="c-lists-timeline__content">
-                                <h3>派遣社員としてコーディング業務に従事</h3>
-                                <p>
-                                    大手印刷会社のECサイトやランディングページのコーディング業務を担当しました。
-                                </p>
-                            </div>
-                        </li>
-                        <!-- <li class="c-lists-timeline__list">
-						<div class="c-lists-timeline__dot"></div>
-						<time class="c-lists-timeline__time">2016.04&nbsp;-&nbsp;2020.03</time>
-						<div class="c-lists-timeline__content">
-							<h3>国公立大学</h3>
-							<p>
-								大学
-							</p>
-						</div>
-					</li> -->
-                    </ul>
+
+                    <article class="c-block-tabs">
+                        <!--menu1-->
+                        <input
+                            id="tab1"
+                            type="radio"
+                            name="c-block-tabs__item"
+                            checked
+                        />
+                        <label class="c-block-tabs__item" for="tab1"
+                            >Value</label
+                        >
+
+                        <!--menu2-->
+                        <input
+                            id="tab2"
+                            type="radio"
+                            name="c-block-tabs__item"
+                        />
+                        <label class="c-block-tabs__item" for="tab2"
+                            >Timeline</label
+                        >
+
+                        <!--menu3-->
+                        <input
+                            id="tab3"
+                            type="radio"
+                            name="c-block-tabs__item"
+                        />
+                        <label class="c-block-tabs__item" for="tab3"
+                            >Work</label
+                        >
+
+                        <!--content1-->
+                        <div class="c-block-tabs__content" id="tab1_content">
+                            <%- include('./_content/_value',{path:path,}) %>
+                        </div>
+
+                        <!--content2-->
+                        <div class="c-block-tabs__content" id="tab2_content">
+                            <%- include('./_content/_timeline',{path:path,}) %>
+                        </div>
+
+                        <!--content3-->
+                        <div class="c-block-tabs__content" id="tab3_content">
+                            <%- include('./_content/_work',{path:path,}) %>
+                        </div>
+                    </article>
                 </div>
             </section>
         </main>

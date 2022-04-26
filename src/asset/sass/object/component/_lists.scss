@@ -16,8 +16,65 @@
             font-family: "Material Icons";
             font-weight: 900;
         }
-        & + li {
-            margin-top: 8px;
+    }
+}
+
+/* value
+─────────────── */
+.c-lists-value {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    &__list {
+        display: flex;
+        flex: 100%;
+        gap: 16px;
+    }
+    &__image {
+        width: 60px;
+        height: 60px;
+        background-color: $c-gray;
+    }
+    &__dl {
+        // max-width: 600px;
+    }
+    &__rate {
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+        white-space: nowrap;
+        color: $c-gray;
+        &:after,
+        &:before {
+            content: "★★★★★";
+        }
+        &:after {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            color: $c-accent;
+        }
+        &[data-rate="5"]:after {
+            width: 100%;
+        }
+        &[data-rate="4"]:after {
+            width: 80%;
+        }
+        &[data-rate="3"]:after {
+            width: 60%;
+        }
+        &[data-rate="2"]:after {
+            width: 40%;
+        }
+        &[data-rate="1"]:after {
+            width: 20%;
+        }
+        &[data-rate="0"]:after {
+            width: 0%;
         }
     }
 }
