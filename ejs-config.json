@@ -2,13 +2,13 @@
     "data": {
         "meta": {
             "home": {
-                "title": "traveler20.site",
+                "title": "traveler20 - コーディングが強みのWEBデザイナー",
                 "description": "traveler20のWEBサイトです。"
             },
-            "about": {
-                "title": "ABOUTページタイトル",
-                "description": "About Description",
-                "url": "about"
+            "archive": {
+                "title": "アーカイブ｜traveler20 - コーディングが強みのWEBデザイナー",
+                "description": "過去に制作したサイト一覧です。",
+                "url": "archive"
             }
         }
     }
