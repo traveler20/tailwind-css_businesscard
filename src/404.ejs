@@ -1,0 +1,58 @@
+<%_ const path='./'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./_common/_head', { path:path,meta:data.meta['404'],})%>
+    </head>
+    <body>
+        <%- include('./_common/_header',{path:path,}) %>
+
+        <!-- .l-main -->
+        <main class="l-main">
+            <section class="l-section">
+                <div class="l-section__inner">
+                    <figure class="flex items-center gap-8 mb-9">
+                        <picture class="c-block-picture">
+                            <img
+                                class="c-block-picture__image"
+                                src="https://avatars.githubusercontent.com/u/60683849?v=4"
+                                alt="traveler20"
+                                loading="lazy"
+                            />
+                        </picture>
+                        <figcaption>
+                            <h1 class="c-text-heading1">404</h1>
+                            <a
+                                class="c-text-gray"
+                                href="https://github.com/traveler20"
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                                >GitHub</a
+                            >
+                        </figcaption>
+                    </figure>
+                    <article>
+                        <p>当サイトをご覧頂きありがとうございます。</p>
+                        <p class="mb-4">
+                            申し訳ありませんが、アクセスしようとした記事は削除されたかURLが変更されています。
+                        </p>
+                        <ul class="c-lists-check">
+                            <li class="c-lists-check__list mb-1">
+                                <a href="/">ページトップへ</a>
+                            </li>
+                            <li class="c-lists-check__list mb-1">
+                                <a href="https://github.com/traveler20"
+                                    >GitHub</a
+                                >
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <!-- /.l-main -->
+
+        <%- include('./_common/_footer',{path:path,}) %>
+    </body>
+</html>
