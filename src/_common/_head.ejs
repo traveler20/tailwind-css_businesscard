@@ -17,15 +17,19 @@
 <!-- End Google Tag Manager -->
 <!-- ogp -->
 <meta property="og:type" content="website" />
-<%_ if(meta.title) { _%>
+<%_ if(meta.title){ _%>
 <title><%= meta.title%></title>
-<%_ }else{ _%>
-<title>traveler20のサイト</title>
-<%_ } _%>
-<meta name="description" content="<%= meta.description %>" />
 <meta property="og:title" content="<%= meta.title%>" />
+<%_ }else{ _%>
+<title>traveler20</title>
+<meta property="og:title" content="traveler20" />
+<%_ } _%> <%_ if(meta.description) { _%>
+<meta name="description" content="<%= meta.description %>" />
 <meta property="og:description" content="<%= meta.description %>" />
-<%_ if(meta.url) { _%>
+<%_ }else{ _%>
+<meta name="description" content="traveler20のWEBサイトです。" />
+<meta property="og:description" content="traveler20のWEBサイトです。" />
+<%_ } _%> <%_ if(meta.url) { _%>
 <meta property="og:url" content="https://traveler20.site/<%= meta.url %>" />
 <%_ }else{ _%>
 <meta property="og:url" content="https://traveler20.site/" />
