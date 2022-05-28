@@ -1,3 +1,6 @@
+// ──────────────────────────────
+// dark mode
+// ──────────────────────────────
 // 要素やクラスを指定しておく
 const checkToggle = document.getElementById("js_mode_toggle");
 const rotateIcon = document.getElementById("js_rotate");
@@ -66,4 +69,28 @@ function changeMode(mode) {
 function rotateInfinite() {
     nowRotate += 180;
     rotateIcon.style.transform = "rotate(" + nowRotate + "deg)";
+}
+
+// ──────────────────────────────
+// parameter
+// ───────────────
+// ?checked=tab2 で表示
+// ──────────────────────────────
+const url =
+    location.protocol +
+    "//" +
+    location.host +
+    location.pathname +
+    location.search;
+const param = url.split("?");
+const params = param.length > 1 && param[1].split("&");
+const paramArray = [];
+for (let i = 0; i < params.length; i++) {
+    const parameters = params[i].split("=");
+    paramArray.push(parameters[0]);
+    paramArray[parameters[0]] = parameters[1];
+
+    const input = decodeURIComponent(parameters[1]);
+
+    document.getElementById(input).setAttribute("checked", "");
 }
