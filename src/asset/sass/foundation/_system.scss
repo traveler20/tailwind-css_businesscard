@@ -11,23 +11,23 @@ $c-base-dark: #333;
 $c-black: #202225;
 $c-gray: #999;
 $c-border: 0.5px solid
-    rgba(
-        $color: #999,
-        $alpha: 0.5,
-    );
+  rgba(
+    $color: #999,
+    $alpha: 0.5,
+  );
 
 $c-accent: #6fc173;
 
 // transition
 // ---------------------
 @mixin transition-base($second: 0.4s) {
-    transition: all $second;
+  transition: all $second;
 }
 
 // content max-width
 // ---------------------
 @mixin content-maxwidth($px: 1200px) {
-    max-width: $px;
+  max-width: $px;
 }
 
 // font system
@@ -44,25 +44,25 @@ $c-accent: #6fc173;
 // responsive system
 // ---------------------
 @mixin breakpoint($point) {
-    @if $point == tablet {
-        @media (min-width: 640px) {
-            @content;
-        }
+  @if $point == tablet {
+    @media (min-width: 640px) {
+      @content;
     }
-    @if $point == pc {
-        @media (min-width: 890px) {
-            @content;
-        }
+  }
+  @if $point == pc {
+    @media (min-width: 890px) {
+      @content;
     }
+  }
 }
 
 .pc-only {
-    display: none;
+  display: none;
 }
 @include breakpoint(tablet) {
 }
 @include breakpoint(pc) {
-    .pc-only {
-        display: inline-block;
-    }
+  .pc-only {
+    display: inline-block;
+  }
 }

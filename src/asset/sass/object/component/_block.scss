@@ -5,54 +5,54 @@
 /* picture
 ─────────────── */
 .c-block-picture {
-    display: block;
-    width: 100px;
-    height: 100px;
+  display: block;
+  width: 100px;
+  height: 100px;
 
-    &__image {
-        border-radius: 20px;
-        background-color: $c-accent;
-    }
+  &__image {
+    border-radius: 20px;
+    background-color: $c-accent;
+  }
 }
 
 /* tabs
 ─────────────── */
 .c-block-tabs {
-    width: min(800px, 100%);
-    margin: 0 auto;
+  width: min(800px, 100%);
+  margin: 0 auto;
 
-    &__item {
-        width: calc(100% / 3);
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        font-weight: bold;
-        border-bottom: 3px solid $c-gray;
-        display: block;
-        float: left;
-        transition: all 0.2s ease;
-        &:hover {
-            // opacity: 0.7;
-            cursor: pointer;
-        }
+  &__item {
+    width: calc(100% / 3);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px solid $c-gray;
+    display: block;
+    float: left;
+    transition: all 0.2s ease;
+    &:hover {
+      // opacity: 0.7;
+      cursor: pointer;
     }
+  }
 
-    &__content {
-        display: none;
-        padding: 32px 8px 0;
-        clear: both;
-        overflow: hidden;
-    }
+  &__content {
+    display: none;
+    padding: 32px 8px 0;
+    clear: both;
+    overflow: hidden;
+  }
 }
 input[name="c-block-tabs__item"] {
-    display: none;
+  display: none;
 }
 #tab1:checked ~ #tab1_content,
 #tab2:checked ~ #tab2_content,
 #tab3:checked ~ #tab3_content {
-    display: block;
+  display: block;
 }
 .c-block-tabs input:checked + .c-block-tabs__item {
-    background-color: $c-gray;
-    color: #fff;
+  background-color: $c-gray;
+  color: #fff;
 }

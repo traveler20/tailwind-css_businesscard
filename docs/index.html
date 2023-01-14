@@ -1,417 +1,363 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <!-- meta -->
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    "gtm.start": new Date().getTime(),
-                    event: "gtm.js",
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-MQJV33K");
-        </script>
-        <!-- End Google Tag Manager -->
-        <!-- ogp -->
-        <meta property="og:type" content="website" />
-        <title>traveler20 - コーディングが強みのWEBデザイナー</title>
-        <meta
-            property="og:title"
-            content="traveler20 - コーディングが強みのWEBデザイナー"
-        />
-        <meta name="description" content="traveler20のWEBサイトです。" />
-        <meta property="og:description" content="traveler20のWEBサイトです。" />
-        <meta property="og:url" content="https://traveler20.site/" />
-        <!-- ogp-image -->
-        <meta
-            property="og:image"
-            content="https://traveler20.github.io/asset/img/meta/ogp.webp"
-        />
-        <meta property="og:locale" content="ja_JP" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@traveler20site" />
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="./asset/img/meta/favicon.ico"
-        />
-        <!-- css -->
-        <link rel="stylesheet" href="./asset/css/style.css" />
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-MQJV33K"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MQJV33K");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- ogp -->
+    <meta property="og:type" content="website" />
+    <title>traveler20 - コーディングが強みのWEBデザイナー</title>
+    <meta
+      property="og:title"
+      content="traveler20 - コーディングが強みのWEBデザイナー"
+    />
+    <meta name="description" content="traveler20のWEBサイトです。" />
+    <meta property="og:description" content="traveler20のWEBサイトです。" />
+    <meta property="og:url" content="https://traveler20.site/" />
+    <!-- ogp-image -->
+    <meta
+      property="og:image"
+      content="https://traveler20.github.io/asset/img/meta/ogp.webp"
+    />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@traveler20site" />
+    <link rel="icon" type="image/x-icon" href="./asset/img/meta/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MQJV33K"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <!-- .l-header -->
-        <header class="l-header">
-            <div class="l-header__inner">
-                <a class="l-header__logo" href="/">
-                    <img
-                        src="https://traveler20.github.io/asset/img/meta/logo-icon.svg"
-                        alt="traveler20"
-                    />
-                </a>
-                <div class="l-header__mode">
-                    <label class="l-header__mode__label">
-                        <input
-                            type="checkbox"
-                            class="l-header__mode__input"
-                            id="js_mode_toggle"
-                        />
-                        <span
-                            class="l-header__mode__mode"
-                            id="js_rotate"
-                        ></span>
-                    </label>
-                </div>
+    <!-- .l-header -->
+    <header class="l-header">
+      <div class="l-header__inner">
+        <a class="l-header__logo" href="/">
+          <img
+            src="https://traveler20.github.io/asset/img/meta/logo-icon.svg"
+            alt="traveler20"
+          />
+        </a>
+        <div class="l-header__mode">
+          <label class="l-header__mode__label">
+            <input
+              type="checkbox"
+              class="l-header__mode__input"
+              id="js_mode_toggle"
+            />
+            <span class="l-header__mode__mode" id="js_rotate"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <!-- /.l-header -->
+
+    <!-- .l-main -->
+    <main class="l-main">
+      <section class="l-section">
+        <div class="l-section__inner">
+          <figure class="flex items-center gap-8 mb-9">
+            <picture class="c-block-picture">
+              <img
+                class="c-block-picture__image"
+                src="https://avatars.githubusercontent.com/u/60683849?v=4"
+                alt="traveler20"
+                loading="lazy"
+              />
+            </picture>
+            <figcaption>
+              <h1 class="c-text-heading1">traveler20</h1>
+              <a
+                class="c-text-gray"
+                href="https://github.com/traveler20"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                >GitHub</a
+              >
+            </figcaption>
+          </figure>
+
+          <article class="c-block-tabs">
+            <!--menu1-->
+            <input id="tab1" type="radio" name="c-block-tabs__item" checked />
+            <label class="c-block-tabs__item" for="tab1">Value</label>
+
+            <!--menu2-->
+            <input id="tab2" type="radio" name="c-block-tabs__item" />
+            <label class="c-block-tabs__item" for="tab2">Timeline</label>
+
+            <!--menu3-->
+            <input id="tab3" type="radio" name="c-block-tabs__item" />
+            <label class="c-block-tabs__item" for="tab3">Work</label>
+
+            <!--content1-->
+            <div class="c-block-tabs__content" id="tab1_content">
+              <h2 class="c-text-heading2 mb-5">Value</h2>
+              <ul class="c-lists-value">
+                <li class="c-lists-value__list">
+                  <img
+                    class="c-lists-value__image"
+                    src="https://traveler20.github.io/asset/img/skill/cording.svg"
+                    alt="コーディングスキル"
+                    loading="lazy"
+                  />
+                  <dl class="c-lists-value__dl">
+                    <dt class="c-lists-value__title">コーディングスキル</dt>
+                    <dd class="c-lists-value__description">
+                      <div class="c-lists-value__rate" data-rate="5"></div>
+                      <p>
+                        HTML/CSS/JavaScriptを用いたコーディングはもちろん、gulpを用いてEJSとDart
+                        Sassを用いたコーディングも可能です。CSS設計はFLOCSSを用いることが多いです。
+                      </p>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="c-lists-value__list">
+                  <img
+                    class="c-lists-value__image"
+                    src="https://traveler20.github.io/asset/img/skill/design.svg"
+                    alt="デザインスキル"
+                    loading="lazy"
+                  />
+                  <dl class="c-lists-value__dl">
+                    <dt class="c-lists-value__title">デザインスキル</dt>
+                    <dd class="c-lists-value__description">
+                      <div class="c-lists-value__rate" data-rate="4"></div>
+                      <p>
+                        FigmaやAdobe
+                        XDを用いたWEBサイトのデザインが可能です。<br />
+                        PhotoshopやIllustratorを用いたバナー制作なども担当しています。
+                      </p>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="c-lists-value__list">
+                  <img
+                    class="c-lists-value__image"
+                    src="https://traveler20.github.io/asset/img/skill/web.svg"
+                    alt="サイトの構築・運用"
+                    loading="lazy"
+                  />
+                  <dl class="c-lists-value__dl">
+                    <dt class="c-lists-value__title">サイトの構築・運用</dt>
+                    <dd class="c-lists-value__description">
+                      <div class="c-lists-value__rate" data-rate="4"></div>
+                      <p>
+                        静的ウェブサイトのWordPress組み込みやWordPressのテーマ化、Wraptasへの組み込みができます。<br />
+                        Googleデータポータルを用いたGoogleAnalytics等のレポートの出力も担当しています。
+                      </p>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
             </div>
-        </header>
-        <!-- /.l-header -->
 
-        <!-- .l-main -->
-        <main class="l-main">
-            <section class="l-section">
-                <div class="l-section__inner">
-                    <figure class="flex items-center gap-8 mb-9">
-                        <picture class="c-block-picture">
-                            <img
-                                class="c-block-picture__image"
-                                src="https://avatars.githubusercontent.com/u/60683849?v=4"
-                                alt="traveler20"
-                                loading="lazy"
-                            />
-                        </picture>
-                        <figcaption>
-                            <h1 class="c-text-heading1">traveler20</h1>
-                            <a
-                                class="c-text-gray"
-                                href="https://github.com/traveler20"
-                                target="_blank"
-                                rel="nofollow noopener noreferrer"
-                                >GitHub</a
-                            >
-                        </figcaption>
-                    </figure>
+            <!--content2-->
+            <div class="c-block-tabs__content" id="tab2_content">
+              <h2 class="c-text-heading2 mb-5">Timeline</h2>
+              <ul class="c-lists-timeline">
+                <li class="c-lists-timeline__list">
+                  <div class="c-lists-timeline__dot"></div>
+                  <time class="c-lists-timeline__time">2021.11&nbsp;-</time>
+                  <div class="c-lists-timeline__content">
+                    <h3>
+                      東証プライム上場企業のインハウスデザイナーとして就業開始
+                    </h3>
+                    <p>
+                      正社員のWEBデザイナーとして就業。東証プライム上場企業のSaaS関係のランディングページのデザイン・コーディング制作を担当しています。
+                    </p>
+                  </div>
+                </li>
+                <li class="c-lists-timeline__list">
+                  <div class="c-lists-timeline__dot"></div>
+                  <time class="c-lists-timeline__time">2021.05&nbsp;-</time>
+                  <div class="c-lists-timeline__content">
+                    <h3>
+                      【副業】派遣就業と並行してデザイン・コーディング業務に従事
+                    </h3>
+                    <p>
+                      派遣社員での就業と並行して、個人事業主としてもデザイン・コーディング業務に従事しています。スタートアップ企業や個人経営店舗のランディングページやホームページ制作を担当。
+                    </p>
+                  </div>
+                </li>
+                <li class="c-lists-timeline__list">
+                  <div class="c-lists-timeline__dot"></div>
+                  <time class="c-lists-timeline__time"
+                    >2020.11&nbsp;-&nbsp;2021.10</time
+                  >
+                  <div class="c-lists-timeline__content">
+                    <h3>派遣社員としてコーディング業務に従事</h3>
+                    <p>
+                      大手印刷会社のECサイトやランディングページのコーディング業務を担当しました。
+                    </p>
+                  </div>
+                </li>
+                <li class="c-lists-timeline__list">
+                  <div class="c-lists-timeline__dot"></div>
+                  <time class="c-lists-timeline__time"
+                    >2016.04&nbsp;-&nbsp;2020.03</time
+                  >
+                  <div class="c-lists-timeline__content">
+                    <h3>兵庫県立大学&nbsp;経営学部</h3>
+                    <p>
+                      経営学部事業創造学科でビジネスモデルやブルー・オーシャン戦略をメインに研究しました。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-                    <article class="c-block-tabs">
-                        <!--menu1-->
-                        <input
-                            id="tab1"
-                            type="radio"
-                            name="c-block-tabs__item"
-                            checked
-                        />
-                        <label class="c-block-tabs__item" for="tab1"
-                            >Value</label
-                        >
+            <!--content3-->
+            <div class="c-block-tabs__content" id="tab3_content">
+              <h2 class="c-text-heading2 mb-2">Work</h2>
+              <p class="mb-5">
+                WEB上に記載できる実績は一部になります。詳細は<a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdKu5nx2UrKoUZ2vpv8aKSG0LmLhYMiGTr5FKgEVZTHTBbblw/viewform"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  >お問い合わせ</a
+                >ください。
+              </p>
+              <h3 class="c-text-heading3 mb-2">過去のポートフォリオ</h3>
+              <ul class="c-lists-check mb-4">
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://o.traveler.workers.dev/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >ポートフォリオサイト&nbsp;2022年05月&nbsp;Ver.</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="/archive/202201/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >ポートフォリオサイト&nbsp;2022年01月&nbsp;Ver.</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="/archive/202111/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >ポートフォリオサイト&nbsp;2021年11月&nbsp;Ver.</a
+                  >
+                </li>
+              </ul>
 
-                        <!--menu2-->
-                        <input
-                            id="tab2"
-                            type="radio"
-                            name="c-block-tabs__item"
-                        />
-                        <label class="c-block-tabs__item" for="tab2"
-                            >Timeline</label
-                        >
+              <h3 class="c-text-heading3 mb-2">個人制作物</h3>
+              <ul class="c-lists-check">
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/cafe/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >カフェテリアHP</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/tra/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >会社HP</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/kokopp/lp/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >アプリLP</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/wdlanding/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >観葉植物LP</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/card/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >プロフィールカード</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/newyear/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >特集サイト</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/tonomine/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >特集サイト</a
+                  >
+                </li>
+                <li class="c-lists-check__list mb-1">
+                  <a
+                    href="https://traveler20.github.io/pine-apple/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >ガジェットHP</a
+                  >
+                </li>
+                <li class="c-lists-check__list">
+                  <a
+                    href="https://traveler20.github.io/coda/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    >コードタイピングゲーム</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- /.l-main -->
 
-                        <!--menu3-->
-                        <input
-                            id="tab3"
-                            type="radio"
-                            name="c-block-tabs__item"
-                        />
-                        <label class="c-block-tabs__item" for="tab3"
-                            >Work</label
-                        >
+    <!-- .l-footer -->
+    <footer class="l-footer">
+      <small class="l-footer__copy">&copy;&nbsp;2022&nbsp;traveler20.</small>
+    </footer>
+    <!-- /.l-footer -->
 
-                        <!--content1-->
-                        <div class="c-block-tabs__content" id="tab1_content">
-                            <h2 class="c-text-heading2 mb-5">Value</h2>
-                            <ul class="c-lists-value">
-                                <li class="c-lists-value__list">
-                                    <img
-                                        class="c-lists-value__image"
-                                        src="https://traveler20.github.io/asset/img/skill/cording.svg"
-                                        alt="コーディングスキル"
-                                        loading="lazy"
-                                    />
-                                    <dl class="c-lists-value__dl">
-                                        <dt class="c-lists-value__title">
-                                            コーディングスキル
-                                        </dt>
-                                        <dd class="c-lists-value__description">
-                                            <div
-                                                class="c-lists-value__rate"
-                                                data-rate="5"
-                                            ></div>
-                                            <p>
-                                                HTML/CSS/JavaScriptを用いたコーディングはもちろん、gulpを用いてEJSとDart
-                                                Sassを用いたコーディングも可能です。CSS設計はFLOCSSを用いることが多いです。
-                                            </p>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li class="c-lists-value__list">
-                                    <img
-                                        class="c-lists-value__image"
-                                        src="https://traveler20.github.io/asset/img/skill/design.svg"
-                                        alt="デザインスキル"
-                                        loading="lazy"
-                                    />
-                                    <dl class="c-lists-value__dl">
-                                        <dt class="c-lists-value__title">
-                                            デザインスキル
-                                        </dt>
-                                        <dd class="c-lists-value__description">
-                                            <div
-                                                class="c-lists-value__rate"
-                                                data-rate="4"
-                                            ></div>
-                                            <p>
-                                                FigmaやAdobe
-                                                XDを用いたWEBサイトのデザインが可能です。<br />
-                                                PhotoshopやIllustratorを用いたバナー制作なども担当しています。
-                                            </p>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li class="c-lists-value__list">
-                                    <img
-                                        class="c-lists-value__image"
-                                        src="https://traveler20.github.io/asset/img/skill/web.svg"
-                                        alt="サイトの構築・運用"
-                                        loading="lazy"
-                                    />
-                                    <dl class="c-lists-value__dl">
-                                        <dt class="c-lists-value__title">
-                                            サイトの構築・運用
-                                        </dt>
-                                        <dd class="c-lists-value__description">
-                                            <div
-                                                class="c-lists-value__rate"
-                                                data-rate="4"
-                                            ></div>
-                                            <p>
-                                                静的ウェブサイトのWordPress組み込みやWordPressのテーマ化、Wraptasへの組み込みができます。<br />
-                                                Googleデータポータルを用いたGoogleAnalytics等のレポートの出力も担当しています。
-                                            </p>
-                                        </dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!--content2-->
-                        <div class="c-block-tabs__content" id="tab2_content">
-                            <h2 class="c-text-heading2 mb-5">Timeline</h2>
-                            <ul class="c-lists-timeline">
-                                <li class="c-lists-timeline__list">
-                                    <div class="c-lists-timeline__dot"></div>
-                                    <time class="c-lists-timeline__time"
-                                        >2021.11&nbsp;-</time
-                                    >
-                                    <div class="c-lists-timeline__content">
-                                        <h3>
-                                            東証プライム上場企業のインハウスデザイナーとして就業開始
-                                        </h3>
-                                        <p>
-                                            正社員のWEBデザイナーとして就業。東証プライム上場企業のSaaS関係のランディングページのデザイン・コーディング制作を担当しています。
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="c-lists-timeline__list">
-                                    <div class="c-lists-timeline__dot"></div>
-                                    <time class="c-lists-timeline__time"
-                                        >2021.05&nbsp;-</time
-                                    >
-                                    <div class="c-lists-timeline__content">
-                                        <h3>
-                                            【副業】派遣就業と並行してデザイン・コーディング業務に従事
-                                        </h3>
-                                        <p>
-                                            派遣社員での就業と並行して、個人事業主としてもデザイン・コーディング業務に従事しています。スタートアップ企業や個人経営店舗のランディングページやホームページ制作を担当。
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="c-lists-timeline__list">
-                                    <div class="c-lists-timeline__dot"></div>
-                                    <time class="c-lists-timeline__time"
-                                        >2020.11&nbsp;-&nbsp;2021.10</time
-                                    >
-                                    <div class="c-lists-timeline__content">
-                                        <h3>
-                                            派遣社員としてコーディング業務に従事
-                                        </h3>
-                                        <p>
-                                            大手印刷会社のECサイトやランディングページのコーディング業務を担当しました。
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="c-lists-timeline__list">
-                                    <div class="c-lists-timeline__dot"></div>
-                                    <time class="c-lists-timeline__time"
-                                        >2016.04&nbsp;-&nbsp;2020.03</time
-                                    >
-                                    <div class="c-lists-timeline__content">
-                                        <h3>兵庫県立大学&nbsp;経営学部</h3>
-                                        <p>
-                                            経営学部事業創造学科でビジネスモデルやブルー・オーシャン戦略をメインに研究しました。
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!--content3-->
-                        <div class="c-block-tabs__content" id="tab3_content">
-                            <h2 class="c-text-heading2 mb-2">Work</h2>
-                            <p class="mb-5">
-                                WEB上に記載できる実績は一部になります。詳細は<a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSdKu5nx2UrKoUZ2vpv8aKSG0LmLhYMiGTr5FKgEVZTHTBbblw/viewform"
-                                    target="_blank"
-                                    rel="nofollow noopener noreferrer"
-                                    >お問い合わせ</a
-                                >ください。
-                            </p>
-                            <h3 class="c-text-heading3 mb-2">
-                                過去のポートフォリオ
-                            </h3>
-                            <ul class="c-lists-check mb-4">
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://o.traveler.workers.dev/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >ポートフォリオサイト&nbsp;2022年05月&nbsp;Ver.</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="/archive/202201/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >ポートフォリオサイト&nbsp;2022年01月&nbsp;Ver.</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="/archive/202111/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >ポートフォリオサイト&nbsp;2021年11月&nbsp;Ver.</a
-                                    >
-                                </li>
-                            </ul>
-
-                            <h3 class="c-text-heading3 mb-2">個人制作物</h3>
-                            <ul class="c-lists-check">
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/cafe/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >カフェテリアHP</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/tra/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >会社HP</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/kokopp/lp/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >アプリLP</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/wdlanding/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >観葉植物LP</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/card/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >プロフィールカード</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/newyear/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >特集サイト</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/tonomine/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >特集サイト</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list mb-1">
-                                    <a
-                                        href="https://traveler20.github.io/pine-apple/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >ガジェットHP</a
-                                    >
-                                </li>
-                                <li class="c-lists-check__list">
-                                    <a
-                                        href="https://traveler20.github.io/coda/"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                        >コードタイピングゲーム</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <!-- /.l-main -->
-
-        <!-- .l-footer -->
-        <footer class="l-footer">
-            <small class="l-footer__copy"
-                >&copy;&nbsp;2022&nbsp;traveler20.</small
-            >
-        </footer>
-        <!-- /.l-footer -->
-
-        <script src="./asset/js/script.js"></script>
-    </body>
+    <script src="./asset/js/script.js"></script>
+  </body>
 </html>

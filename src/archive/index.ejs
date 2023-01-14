@@ -1,27 +1,27 @@
 <%_ const path='./../'; _%>
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <!-- meta -->
-        <%- include('./../_common/_head', {
-        path:path,meta:data.meta['archive'],}) %>
-    </head>
-    <body>
-        <%- include('./../_common/_header',{path:path,}) %>
+  <head>
+    <!-- meta -->
+    <%- include('./../_common/_head', { path:path,meta:data.meta['archive'],})
+    %>
+  </head>
+  <body>
+    <%- include('./../_common/_header',{path:path,}) %>
 
-        <!-- .l-main -->
-        <main class="l-main">
-            <section class="l-section">
-                <div class="l-section__inner">
-                    <ul class="c-lists-work">
-                        <li class="c-lists-work__list"></li>
-                    </ul>
+    <!-- .l-main -->
+    <main class="l-main">
+      <section class="l-section">
+        <div class="l-section__inner">
+          <ul class="c-lists-work">
+            <li class="c-lists-work__list"></li>
+          </ul>
 
-                    <%- include('./../_content/_work',{path:path,}) %>
-                </div>
-            </section>
-        </main>
+          <%- include('./../_content/_work',{path:path,}) %>
+        </div>
+      </section>
+    </main>
 
-        <%- include('./../_common/_footer',{path:path,}) %>
-    </body>
+    <%- include('./../_common/_footer',{path:path,}) %>
+  </body>
 </html>
