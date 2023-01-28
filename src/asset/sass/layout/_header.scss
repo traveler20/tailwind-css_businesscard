@@ -20,7 +20,12 @@
     align-items: center;
   }
   &__logo {
-    width: 24px;
+    display: flex;
+    width: 28px;
+    svg {
+      width: 100%;
+      height: auto;
+    }
   }
 
   /* モード切り替えボタン */

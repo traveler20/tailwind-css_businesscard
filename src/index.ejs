@@ -33,32 +33,20 @@
             </figcaption>
           </figure>
 
-          <article class="c-block-tabs">
-            <!--menu1-->
-            <input id="tab1" type="radio" name="c-block-tabs__item" checked />
-            <label class="c-block-tabs__item" for="tab1">Value</label>
-
-            <!--menu2-->
-            <input id="tab2" type="radio" name="c-block-tabs__item" />
-            <label class="c-block-tabs__item" for="tab2">Timeline</label>
-
-            <!--menu3-->
-            <input id="tab3" type="radio" name="c-block-tabs__item" />
-            <label class="c-block-tabs__item" for="tab3">Work</label>
-
-            <!--content1-->
-            <div class="c-block-tabs__content" id="tab1_content">
+          <article>
+            <!--  -->
+            <div class="mb-9">
               <%- include('./_content/_value',{path:path,}) %>
             </div>
 
-            <!--content2-->
-            <div class="c-block-tabs__content" id="tab2_content">
+            <!--  -->
+            <div class="mb-9">
               <%- include('./_content/_timeline',{path:path,}) %>
             </div>
 
-            <!--content3-->
-            <div class="c-block-tabs__content" id="tab3_content">
-              <%- include('./_content/_work',{path:path,}) %>
+            <!--  -->
+            <div class="">
+              <%- include('./_content/_contact',{path:path,}) %>
             </div>
           </article>
         </div>
