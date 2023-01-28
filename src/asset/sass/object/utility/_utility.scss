@@ -1,7 +1,13 @@
 /* utility
 ────────────────────────────── */
+.text-sm {
+  font-size: 14px;
+}
 .text-4xl {
   font-size: 36px;
+}
+.text-center {
+  text-align: center;
 }
 
 .mb-1 {
@@ -18,6 +24,9 @@
 }
 .mb-9 {
   margin-bottom: 36px;
+}
+.mb-14 {
+  margin-bottom: 56px;
 }
 
 .flex {
