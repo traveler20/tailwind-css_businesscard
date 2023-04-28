@@ -108,7 +108,7 @@
       <section class="l-section">
         <div class="l-section__inner">
           <section class="mb-14">
-            <div class="text-center mb-9">
+            <!-- <div class="text-center mb-9">
               <svg
                 width="72"
                 height="100"
@@ -140,7 +140,7 @@
                   </linearGradient>
                 </defs>
               </svg>
-            </div>
+            </div> -->
             <figure class="flex items-center gap-8">
               <picture class="c-block-picture">
                 <img
@@ -166,10 +166,54 @@
             </figure>
           </section>
 
-          <article>
-            <!--  -->
-            <div class="mb-9">
-              <h2 id="value" class="c-text-heading2 mb-5">Value</h2>
+          <article class="c-tab">
+            <div
+              class="c-tab-tablist"
+              role="tablist"
+              aria-labelledby="tablist-label"
+            >
+              <button
+                class="c-tab-button is-active js-tab-button"
+                type="button"
+                role="tab"
+                id="tab1"
+                aria-controls="tab-panel1"
+                aria-selected="true"
+              >
+                Value
+              </button>
+              <button
+                class="c-tab-button js-tab-button"
+                type="button"
+                role="tab"
+                id="tab2"
+                aria-controls="tab-panel2"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Timeline
+              </button>
+              <button
+                class="c-tab-button js-tab-button"
+                type="button"
+                role="tab"
+                id="tab3"
+                aria-controls="tab-panel3"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Contact
+              </button>
+            </div>
+
+            <div
+              id="tab-panel1"
+              class="c-tab-panel js-tab-panel is-active"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="tab1"
+            >
+              <h2 id="value" class="c-text-heading2 mb-5">できること</h2>
               <ul class="c-lists-value">
                 <li class="c-lists-value__list">
                   <!-- <span class="text-4xl material-icons"> code </span> -->
@@ -214,10 +258,14 @@
                 </li>
               </ul>
             </div>
-
-            <!--  -->
-            <div class="mb-9">
-              <h2 id="timeline" class="c-text-heading2 mb-5">Timeline</h2>
+            <div
+              id="tab-panel2"
+              class="c-tab-panel js-tab-panel"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="tab2"
+            >
+              <h2 id="timeline" class="c-text-heading2 mb-5">経歴</h2>
               <ul class="c-lists-timeline">
                 <li class="c-lists-timeline__list">
                   <div class="c-lists-timeline__dot"></div>
@@ -267,10 +315,14 @@
                 </li>
               </ul>
             </div>
-
-            <!--  -->
-            <div class="">
-              <h2 id="contact" class="c-text-heading2 mb-2">Contact</h2>
+            <div
+              id="tab-panel3"
+              class="c-tab-panel js-tab-panel"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="tab3"
+            >
+              <h2 id="contact" class="c-text-heading2 mb-2">お問い合わせ</h2>
               <p class="mb-5">
                 <a
                   href="/archive/202201/"

@@ -1,0 +1,31 @@
+.c-tab {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-tab-tablist {
+  display: flex;
+  column-gap: 2px;
+}
+
+.c-tab-button {
+  cursor: pointer;
+  flex: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #666;
+}
+.c-tab-button.is-active {
+  background-color: #fff;
+}
+
+.c-tab-panel {
+  padding: 20px;
+  display: none;
+  border: 1px solid #666;
+  line-height: 1.75;
+}
+.c-tab-panel.is-active {
+  display: block;
+}

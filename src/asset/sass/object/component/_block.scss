@@ -15,6 +15,50 @@
   }
 }
 
+/* .c-tab
+─────────────── */
+.c-tab {
+  width: min(800px, 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-tab-tablist {
+  display: flex;
+  // column-gap: 2px;
+}
+
+.c-tab-button {
+  cursor: pointer;
+  flex: 1;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // border: 1px solid #666;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 3px solid $c-gray;
+}
+.c-tab-button.is-active {
+  // background-color: #fff;
+  color: #fff;
+  background-color: $c-gray;
+}
+
+.c-tab-panel {
+  // padding: 20px;
+  display: none;
+  padding: 32px 8px 0;
+  // border: 1px solid #666;
+  // line-height: 1.75;
+}
+.c-tab-panel.is-active {
+  display: block;
+}
+
+// ──────────────────────────────
+
 /* tabs
 ─────────────── */
 .c-block-tabs {

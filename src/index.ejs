@@ -13,7 +13,7 @@
       <section class="l-section">
         <div class="l-section__inner">
           <section class="mb-14">
-            <div class="text-center mb-9">
+            <!-- <div class="text-center mb-9">
               <svg
                 width="72"
                 height="100"
@@ -45,7 +45,7 @@
                   </linearGradient>
                 </defs>
               </svg>
-            </div>
+            </div> -->
             <figure class="flex items-center gap-8">
               <picture class="c-block-picture">
                 <img
@@ -71,19 +71,71 @@
             </figure>
           </section>
 
-          <article>
-            <!--  -->
-            <div class="mb-9">
+          <article class="c-tab">
+            <div
+              class="c-tab-tablist"
+              role="tablist"
+              aria-labelledby="tablist-label"
+            >
+              <button
+                class="c-tab-button is-active js-tab-button"
+                type="button"
+                role="tab"
+                id="tab1"
+                aria-controls="tab-panel1"
+                aria-selected="true"
+              >
+                Value
+              </button>
+              <button
+                class="c-tab-button js-tab-button"
+                type="button"
+                role="tab"
+                id="tab2"
+                aria-controls="tab-panel2"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Timeline
+              </button>
+              <button
+                class="c-tab-button js-tab-button"
+                type="button"
+                role="tab"
+                id="tab3"
+                aria-controls="tab-panel3"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Contact
+              </button>
+            </div>
+
+            <div
+              id="tab-panel1"
+              class="c-tab-panel js-tab-panel is-active"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="tab1"
+            >
               <%- include('./_content/_value',{path:path,}) %>
             </div>
-
-            <!--  -->
-            <div class="mb-9">
+            <div
+              id="tab-panel2"
+              class="c-tab-panel js-tab-panel"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="tab2"
+            >
               <%- include('./_content/_timeline',{path:path,}) %>
             </div>
-
-            <!--  -->
-            <div class="">
+            <div
+              id="tab-panel3"
+              class="c-tab-panel js-tab-panel"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="tab3"
+            >
               <%- include('./_content/_contact',{path:path,}) %>
             </div>
           </article>

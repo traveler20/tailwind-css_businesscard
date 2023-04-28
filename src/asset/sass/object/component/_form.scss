@@ -3,22 +3,25 @@
 @use "./../../foundation/system" as *;
 
 .c-form {
-  max-width: 600px;
+  max-width: 500px;
   &__item {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     margin-bottom: 20px;
   }
-  &__label,
-  &__input {
-    padding: 10px;
-  }
+  // &__label,
+  // &__input {
+  //   padding: 10px;
+  // }
   &__label {
-    width: 90%;
+    // width: 90%;
     position: relative; // &__required用
+    padding: 10px 4px;
   }
   &__input {
-    width: 90%;
+    // width: 90%;
+    padding: 10px;
     font-size: 16px;
     border: solid 1px $c-gray;
     border-radius: 4px;
@@ -37,10 +40,10 @@
     top: 5px;
     right: 20px;
 
-    color: $c-white;
+    color: $c-black;
     background-color: $c-accent;
     border-radius: 2px;
-    padding: 5px 5px;
+    padding: 4px 4px;
     margin: 0 0 0 18px;
   }
 
@@ -59,16 +62,16 @@
   }
 
   @include breakpoint(tablet) {
-    &__item {
-      flex-wrap: nowrap;
-    }
-    &__label {
-      width: 40%;
-      // text-align: right;
-    }
-    &__input {
-      width: 55%;
-    }
+    // &__item {
+    //   flex-wrap: nowrap;
+    // }
+    // &__label {
+    //   width: 40%;
+    //   // text-align: right;
+    // }
+    // &__input {
+    //   width: 55%;
+    // }
   }
   @include breakpoint(pc) {
   }
@@ -81,7 +84,7 @@
     display: inline-block;
     text-align: center;
     font-weight: bold;
-    color: $c-white;
+    color: $c-black;
     background-color: $c-accent;
     border: solid 2px $c-accent;
     border-radius: 2px;
