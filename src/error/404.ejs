@@ -1,12 +1,12 @@
-<%_ const path='./'; _%>
+<%_ const path='./../'; _%>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <!-- meta -->
-    <%- include('./_common/_head', { path:path,meta:data.meta['404'],})%>
+    <%- include(path + '_common/_head', { path:path,meta:data.meta['404'],})%>
   </head>
   <body>
-    <%- include('./_common/_header',{path:path,}) %>
+    <%- include(path + '_common/_header',{path:path,}) %>
 
     <!-- .l-main -->
     <main class="l-main">
@@ -51,6 +51,6 @@
     </main>
     <!-- /.l-main -->
 
-    <%- include('./_common/_footer',{path:path,}) %>
+    <%- include(path + '_common/_footer',{path:path,}) %>
   </body>
 </html>

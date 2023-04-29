@@ -3,10 +3,10 @@
 <html lang="ja">
   <head>
     <!-- meta -->
-    <%- include('./_common/_head', { path:path,meta:data.meta['home'],})%>
+    <%- include(path + '_common/_head', { path:path,meta:data.meta['home'],})%>
   </head>
   <body>
-    <%- include('./_common/_header',{path:path,}) %>
+    <%- include(path + '_common/_header',{path:path,}) %>
 
     <!-- .l-main -->
     <main class="l-main">
@@ -118,7 +118,7 @@
               tabindex="0"
               aria-labelledby="tab1"
             >
-              <%- include('./_content/_value',{path:path,}) %>
+              <%- include(path + '_content/_value',{path:path,}) %>
             </div>
             <div
               id="tab-panel2"
@@ -127,7 +127,7 @@
               tabindex="0"
               aria-labelledby="tab2"
             >
-              <%- include('./_content/_timeline',{path:path,}) %>
+              <%- include(path + '_content/_timeline',{path:path,}) %>
             </div>
             <div
               id="tab-panel3"
@@ -136,7 +136,7 @@
               tabindex="0"
               aria-labelledby="tab3"
             >
-              <%- include('./_content/_contact',{path:path,}) %>
+              <%- include(path + '_content/_contact',{path:path,}) %>
             </div>
           </article>
         </div>
@@ -144,6 +144,6 @@
     </main>
     <!-- /.l-main -->
 
-    <%- include('./_common/_footer',{path:path,}) %>
+    <%- include(path + '_common/_footer',{path:path,}) %>
   </body>
 </html>
