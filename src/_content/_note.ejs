@@ -1,0 +1,30 @@
+<h2 id="note" class="c-text-heading2">雑記ノート</h2>
+<p class="mt-5">雑記的なブログをたまに書いています。</p>
+<ul class="c-lists-check mt-5" id="js-blog-feed"></ul>
+<script>
+  // フィードのURL
+  const feedUrl = "https://traveler20.site/note/feed/";
+
+  // フィードの取得と表示
+  const blogFeed = document.getElementById("js-blog-feed");
+
+  fetch(feedUrl)
+    .then((response) => response.text())
+    .then((str) => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then((data) => {
+      const items = data.querySelectorAll("item"); // フィード内のアイテム要素を取得
+
+      let count = 0;
+      items.forEach((item) => {
+        if (count < 3) {
+          const title = item.querySelector("title").textContent;
+          const link = item.querySelector("link").textContent;
+
+          const itemHtml = `<li class="c-lists-check__list"><a href="${link}" target="_blank" rel="nofollow noopener noreferrer">${title}</a></li>`;
+          blogFeed.innerHTML += itemHtml;
+          count++;
+        }
+      });
+    })
+    .catch((err) => console.log("フィードを取得できませんでした", err));
+</script>

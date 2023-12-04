@@ -46,7 +46,7 @@
                 </defs>
               </svg>
             </div> -->
-            <figure class="flex items-center gap-8 mt-9">
+            <figure class="flex items-center gap-8">
               <picture class="c-block-picture">
                 <img
                   class="c-block-picture__image"
@@ -60,7 +60,7 @@
                 <h1 class="c-text-heading1">traveler20</h1>
                 <p class="text-sm">
                   <a
-                    class="c-text-gray"
+                    class=""
                     href="https://github.com/traveler20"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
@@ -88,7 +88,7 @@
                 aria-controls="tab-panel1"
                 aria-selected="true"
               >
-                Value
+                Timeline
               </button>
               <button
                 class="c-tab-button js-tab-button"
@@ -99,7 +99,7 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                Timeline
+                Value
               </button>
               <button
                 class="c-tab-button js-tab-button"
@@ -110,7 +110,7 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                Contact
+                Other
               </button>
             </div>
 
@@ -121,7 +121,9 @@
               tabindex="0"
               aria-labelledby="tab1"
             >
-              <%- include(path + '_content/_value',{path:path,}) %>
+              <section>
+                <%- include(path + '_content/_timeline',{path:path,}) %>
+              </section>
             </div>
             <div
               id="tab-panel2"
@@ -130,7 +132,9 @@
               tabindex="0"
               aria-labelledby="tab2"
             >
-              <%- include(path + '_content/_timeline',{path:path,}) %>
+              <section>
+                <%- include(path + '_content/_value',{path:path,}) %>
+              </section>
             </div>
             <div
               id="tab-panel3"
@@ -139,7 +143,15 @@
               tabindex="0"
               aria-labelledby="tab3"
             >
-              <%- include(path + '_content/_contact',{path:path,}) %>
+              <section>
+                <%- include(path + '_content/_contact',{path:path,}) %>
+              </section>
+              <section class="mt-14">
+                <%- include(path + '_content/_note',{path:path,}) %>
+              </section>
+              <section class="mt-14">
+                <%- include(path + '_content/_work',{path:path,}) %>
+              </section>
             </div>
           </article>
         </div>

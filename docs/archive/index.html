@@ -44,6 +44,10 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./../asset/css/style.css" />
+    <meta
+      name="google-site-verification"
+      content="E4QhhVQbs6WX--UCoGSTpSwT6ef1x7K24wQb22mULic"
+    />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -109,13 +113,14 @@
 
     <!-- .l-main -->
     <main class="l-main">
+      <h1 class="c-text-heading1 max-w-760px mx-auto">Archive</h1>
       <section class="l-section">
         <div class="l-section__inner">
-          <ul class="c-lists-work">
+          <!-- <ul class="c-lists-work">
             <li class="c-lists-work__list"></li>
-          </ul>
+          </ul> -->
 
-          <h2 id="work" class="c-text-heading2">Work</h2>
+          <h2 id="work" class="c-text-heading2">つくったもの</h2>
           <p class="mt-5">
             WEB上に記載できる実績は一部になります。詳細は<a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdKu5nx2UrKoUZ2vpv8aKSG0LmLhYMiGTr5FKgEVZTHTBbblw/viewform"
@@ -126,14 +131,11 @@
           </p>
           <h3 class="c-text-heading3 mt-5">過去のポートフォリオ</h3>
           <ul class="c-lists-check mt-2">
-            <li class="c-lists-check__list">
-              <a
-                href="/archive/v3/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                >ポートフォリオサイト&nbsp;Ver.3</a
-              >
-            </li>
+            <!-- <li class="c-lists-check__list">
+    <a href="/archive/v3/" target="_blank" rel="nofollow noopener noreferrer"
+      >ポートフォリオサイト&nbsp;Ver.3</a
+    >
+  </li> -->
             <li class="c-lists-check__list mt-1">
               <a
                 href="/archive/v2/"
@@ -154,6 +156,30 @@
 
           <h3 class="c-text-heading3 mt-5">個人制作物</h3>
           <ul class="c-lists-check mt-2">
+            <li class="c-lists-check__list">
+              <a
+                href="https://www.instagram.com/kokopp_kawagoe/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                >Instagram（川越観光・グルメ系アカウント）</a
+              >
+            </li>
+            <li class="c-lists-check__list">
+              <a
+                href="https://suzuri.jp/kokopp"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                >suzuri（イラスト・ノベルティグッズ）</a
+              >
+            </li>
+            <li class="c-lists-check__list">
+              <a
+                href="https://giphy.com/kokopp"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                >GIPHY（イラスト・GIFステッカー）</a
+              >
+            </li>
             <li class="c-lists-check__list">
               <a
                 href="https://traveler20.github.io/cafe/"
@@ -227,6 +253,45 @@
               >
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="l-section">
+        <div class="l-section__inner">
+          <h2 id="note" class="c-text-heading2">雑記ノート</h2>
+          <p class="mt-5">雑記的なブログをたまに書いています。</p>
+          <ul class="c-lists-check mt-5" id="js-blog-feed"></ul>
+          <script>
+            // フィードのURL
+            const feedUrl = "https://traveler20.site/note/feed/";
+
+            // フィードの取得と表示
+            const blogFeed = document.getElementById("js-blog-feed");
+
+            fetch(feedUrl)
+              .then((response) => response.text())
+              .then((str) =>
+                new window.DOMParser().parseFromString(str, "text/xml")
+              )
+              .then((data) => {
+                const items = data.querySelectorAll("item"); // フィード内のアイテム要素を取得
+
+                let count = 0;
+                items.forEach((item) => {
+                  if (count < 3) {
+                    const title = item.querySelector("title").textContent;
+                    const link = item.querySelector("link").textContent;
+
+                    const itemHtml = `<li class="c-lists-check__list"><a href="${link}" target="_blank" rel="nofollow noopener noreferrer">${title}</a></li>`;
+                    blogFeed.innerHTML += itemHtml;
+                    count++;
+                  }
+                });
+              })
+              .catch((err) =>
+                console.log("フィードを取得できませんでした", err)
+              );
+          </script>
         </div>
       </section>
     </main>

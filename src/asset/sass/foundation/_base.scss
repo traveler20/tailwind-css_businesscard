@@ -56,7 +56,6 @@ object {
   display: block;
 }
 a {
-  color: #1ca9e3;
   text-decoration: underline;
   position: relative;
 
@@ -67,4 +66,7 @@ a {
       opacity: 0.8;
     }
   }
+}
+a:not([class]) {
+  color: #1ca9e3;
 }

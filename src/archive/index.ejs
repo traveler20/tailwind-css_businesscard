@@ -11,13 +11,20 @@
 
     <!-- .l-main -->
     <main class="l-main">
+      <h1 class="c-text-heading1 max-w-760px mx-auto">Archive</h1>
       <section class="l-section">
         <div class="l-section__inner">
-          <ul class="c-lists-work">
+          <!-- <ul class="c-lists-work">
             <li class="c-lists-work__list"></li>
-          </ul>
+          </ul> -->
 
           <%- include('./../_content/_work',{path:path,}) %>
+        </div>
+      </section>
+
+      <section class="l-section">
+        <div class="l-section__inner">
+          <%- include('./../_content/_note',{path:path,}) %>
         </div>
       </section>
     </main>
